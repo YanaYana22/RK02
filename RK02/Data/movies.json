@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Title": "Inception",
+    "Year": 2010,
+    "GenreId": 3,
+    "Rating": 8.8
+  },
+  {
+    "Id": 2,
+    "Title": "The Matrix",
+    "Year": 1999,
+    "GenreId": 3,
+    "Rating": 8.7
+  },
+  {
+    "Id": 3,
+    "Title": "The Godfather",
+    "Year": 1972,
+    "GenreId": 2,
+    "Rating": 9.2
+  },
+  {
+    "Id": 4,
+    "Title": "Home Alone",
+    "Year": 1990,
+    "GenreId": 4,
+    "Rating": 7.6
+  },
+  {
+    "Id": 5,
+    "Title": "F1",
+    "Year": 2025,
+    "GenreId": 1,
+    "Rating": 8.2
+  },
+  {
+    "Id": 6,
+    "Title": "F1",
+    "Year": 2025,
+    "GenreId": 1,
+    "Rating": 9.9
+  }
+]

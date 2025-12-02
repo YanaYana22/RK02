@@ -1,0 +1,74 @@
+﻿<Window x:Class="RK02.Views.AddEditMovieWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить фильм" Height="350" Width="400"
+        WindowStartupLocation="CenterOwner"
+        Background="#7FFF00">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               Content="Добавление фильма"
+               FontSize="18" FontWeight="Bold"
+               HorizontalAlignment="Center" Margin="5"/>
+
+        <Label Grid.Row="1" Grid.Column="0"
+               Content="Название:"/>
+        <TextBox Grid.Row="1" Grid.Column="1"
+                 x:Name="TitleTextBox"
+                 Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0"
+               Content="Год:"/>
+        <TextBox Grid.Row="2" Grid.Column="1"
+                 x:Name="YearTextBox"
+                 Margin="5"/>
+
+        <Label Grid.Row="3" Grid.Column="0"
+               Content="Жанр:"/>
+        <ComboBox Grid.Row="3" Grid.Column="1"
+                  x:Name="GenreComboBox"
+                  Margin="5"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Id"/>
+
+        <Label Grid.Row="4" Grid.Column="0"
+               Content="Рейтинг:"/>
+        <TextBox Grid.Row="4" Grid.Column="1"
+                 x:Name="RatingTextBox"
+                 Margin="5"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                   x:Name="ErrorTextBlock"
+                   Foreground="Red"
+                   TextWrapping="Wrap"
+                   Margin="5"/>
+
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="5">
+            <Button Content="Сохранить"
+                    Width="100"
+                    Click="SaveButton_Click"/>
+            <Button Content="Отмена"
+                    Width="100"
+                    Margin="5,0,0,0"
+                    Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
